@@ -1,3 +1,10 @@
+/build
+/install
+/log
+
+.idea/*.xml
+.idea/inspectionProfiles/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
