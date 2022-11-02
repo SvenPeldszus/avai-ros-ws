@@ -29,15 +29,5 @@ jobs:
           required-ros-distributions: foxy
       - uses: ros-tooling/action-ros-ci@v0.2
         with:
-          colcon-defaults: |
-            {
-              "build": {
-                "mixin": ["asan-gcc","coverage-pytest"]
-              },
-              "test": {
-                "mixin": ["coverage-pytest"]
-              }
-            }
-          colcon-mixin-repository: https://raw.githubusercontent.com/colcon/colcon-mixin-repository/3e627e0fa30db85aea05a50e2c61a9832664d236/index.yaml
-          package-name: sample_package
+          package-name: demo_package
           target-ros2-distro: foxy
